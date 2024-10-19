@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Course Selection</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Course Selection Portal</h1>
+      </header>
+
+      <!-- Student Information -->
+      <section class="student-info">
+        <h2>Welcome, [Student Name]</h2>
+        <p>Semester: 5</p>
+      </section>
+
+      <!-- Course Selection Section -->
+      <section class="course-selection">
+        <h3>Select Your Courses</h3>
+
+        <!-- Course List -->
+        <div class="course-list">
+          <div class="course">
+            <h4>Course: Data Structures</h4>
+            <p>Select a teacher:</p>
+
+            <!-- Teachers Dropdown -->
+            <select>
+              <option value="teacher1">Dr. A. Smith (4.5/5 Rating)</option>
+              <option value="teacher2">Prof. B. Johnson (4.2/5 Rating)</option>
+              <option value="teacher3">Dr. C. Lee (4.7/5 Rating)</option>
+            </select>
+          </div>
+
+          <div class="course">
+            <h4>Course: Operating Systems</h4>
+            <p>Select a teacher:</p>
+
+            <select>
+              <option value="teacher4">Prof. D. Adams (4.3/5 Rating)</option>
+              <option value="teacher5">Dr. E. Clark (4.1/5 Rating)</option>
+            </select>
+          </div>
+
+          <div class="course">
+            <h4>Course: Web Development (Lab)</h4>
+            <p>Select a teacher:</p>
+
+            <select>
+              <option value="teacher6">Dr. F. Green (4.8/5 Rating)</option>
+              <option value="teacher7">Prof. G. Black (4.6/5 Rating)</option>
+            </select>
+          </div>
+        </div>
+
+        <button type="submit">Submit Selections</button>
+      </section>
+
+      <!-- Feedback Section (for previous courses) -->
+      <section class="feedback-section">
+        <h3>Submit Feedback for Previous Courses</h3>
+
+        <div class="feedback">
+          <p>Course: Computer Networks</p>
+          <label for="rating">Rate the Teacher: </label>
+          <input type="number" id="rating" name="rating" min="1" max="5" />
+          <textarea placeholder="Leave your feedback here..."></textarea>
+        </div>
+
+        <button type="submit">Submit Feedback</button>
+      </section>
+    </div>
+  </body>
+</html>
